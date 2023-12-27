@@ -6,31 +6,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>LOGIN PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        .login-form{
+            width: 25rem;
+            margin-top: 140px;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <div>
-            <label for="f_name">First name</label>
-            <input type="text" name="f_name" id="f_name">
+    <form action="'../helpers/login_helper.php'">
+        <div class="container card login-form">
+            <div class="card-body">
 
-        </div><br>
-        <div>
-           <label for="m_name">Middle name</label>
-            <input type="text" name="m_name" id="m_name">
-        </div><br>
-        <div>
-        <label for="l_name">Last name</label>
-            <input type="text" name="l_name" id="l_name">
+            <h4>fill to login</h4><br>
 
-        </div><br>
-        <div>
-        <input type="button" type=submit >
 
+
+            <div>
+                <label for="user name">USER NAME</label>
+                <input type="text" id="user name" class="form-group" name="username"><br>
+
+            </div>
+            <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" class="form-group" name="password"><br>
+            </div><br>
+            <div>
+                <input type="button" class="pull-right btn btn-danger"  type=submit value="submit">
+            </div>
+
+            </div>
         </div>
+        
+        
+      
+
     </form>
-    
+
+
 </body>
 </html>

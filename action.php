@@ -36,6 +36,7 @@
                 <p>Middle name</p>
                 <p>
                     <?php echo $m_name ?>
+                    
                 </p>
             </div>
             <div class="col col-3">
