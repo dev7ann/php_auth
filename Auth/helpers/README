@@ -1,0 +1,40 @@
+Initialization:
+
+git init: Initializes a new Git repository in the current directory.
+Configuration:
+
+git config: Helps in configuring Git settings. Examples:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Basic Workflow:
+
+git status: Shows the status of changes (modified, staged, or untracked files).
+git add <file>: Adds a file to the staging area.
+git add .: Adds all modified and new files to the staging area.
+git commit -m "Commit message": Commits staged changes with a descriptive message.
+Branching and Merging:
+
+git branch: Lists all branches in the repository.
+git branch <branch_name>: Creates a new branch.
+git checkout <branch_name>: Switches to a different branch.
+git merge <branch_name>: Merges changes from one branch to the current branch.
+Remote Repositories:
+
+git remote add origin <remote_URL>: Adds a remote repository.
+git remote -v: Lists all remote repositories.
+git push <remote_name> <branch_name>: Pushes changes to a remote repository.
+git pull <remote_name> <branch_name>: Fetches changes from a remote repository and merges them into the current branch.
+History and Information:
+
+git log: Shows the commit history.
+git diff: Displays changes between commits, the index, and working directory.
+git show <commit_hash>: Shows information about a specific commit.
+Undoing Changes:
+
+git reset: Resets the staging area and/or working directory to a previous state.
+git revert <commit_hash>: Creates a new commit that undoes specific changes from a previous commit.
+Miscellaneous:
+
+git clone <repository_URL>: Clones a repository into a new directory.
+git rm <file>: Removes a file from the working directory and staging area.
+git stash: Temporarily saves changes that are not ready to be committed yet
