@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <form action="'../helpers/login_helper.php'">
+    <form action="'../helpers/login_helper.php'" method="POST">
         <div class="container card login-form">
             <div class="card-body">
 

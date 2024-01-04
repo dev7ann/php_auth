@@ -2,7 +2,7 @@
 
 // Database configuration
 $host = '127.0.0.1';
-$dbname = 'auth';
+$dbname = 'user registration';
 $username = 'root';
 $password = '';
 

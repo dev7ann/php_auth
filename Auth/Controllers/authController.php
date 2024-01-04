@@ -24,5 +24,10 @@ class AuthController {
             return false;
         }
     }
-}
+    public function register_user($f_name, $m_name, $l_name, $phone, $age, $id_no, $gender){
+
+    }
+
+    }
+
 ?>
