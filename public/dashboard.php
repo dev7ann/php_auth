@@ -1,26 +1,72 @@
-<?php
-session_start();
+<!-- Dashboard.php -->
+<?php include('layout.php'); ?>
 
-// Check if the user is logged in
-if (!isset($_SESSION['user_id'])) {
-    // Redirect to login.php if not logged in
-    header("Location: login.php");
-    exit();
-}
+<main role="main" class="col-md-10 col-12 ml-sm-auto px-md-4">
 
-// User is logged in, display the dashboard
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <!-- Include any additional stylesheets or scripts needed for your dashboard -->
-</head>
-<body>
     <h1>Welcome to the Dashboard!</h1>
-    <!-- Include any dashboard content here -->
-</body>
-</html>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                User Details
+                <button class="btn btn-primary pull-right">Edit</button>
+            </div>
+            <div class="card-body">
+
+                <!-- Your user details card content goes here -->
+
+                <div class="row">
+                <div class="col-md-6">
+                    <h5 class="card-title">First Name</h5>
+                    <p class="card-text"><?php echo $user_details->first_name; ?></p>
+                </div>
+
+                <div class="col-md-6">
+                    <h5 class="card-title">Middle Name</h5>
+                    <p class="card-text"><?php echo $user_details->middle_name; ?></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="card-title">Last Name</h5>
+                    <p class="card-text"><?php echo $user_details->last_name; ?></p>
+                </div>
+
+                <div class="col-md-6">
+                    <h5 class="card-title">Phone</h5>
+                    <p class="card-text"><?php echo $user_details->phone; ?></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="card-title">ID Number</h5>
+                    <p class="card-text"><?php echo $user_details->id_no; ?></p>
+                </div>
+
+                <div class="col-md-6">
+                    <h5 class="card-title">Age</h5>
+                    <p class="card-text"><?php echo $user_details->age; ?></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="card-title">Gender</h5>
+                    <p class="card-text"><?php echo $user_details->gender; ?></p>
+                </div>
+
+                <div class="col-md-6">
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text"><?php echo $user_details->email; ?></p>
+                </div>
+            </div>
+
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
