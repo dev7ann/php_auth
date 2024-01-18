@@ -33,7 +33,11 @@
                 </div>
 
                 <div class="text-right">
-                    <input type="submit" class="btn btn-primary " value="Submit">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+
+                <div class="mt-3">
+                    <p>Don't have an account? <a href="register.php">Register here</a>.</p>
                 </div>
             </div>
         </div>

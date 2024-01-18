@@ -51,10 +51,10 @@
                     <a class="nav-link" href="public/dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                <a id= about-link class="nav-link" href="public/about_content.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                <a id= services-link class="nav-link" href="public/services_content.php">Services</a>
                 </li>   
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -72,11 +72,13 @@
         </div>
     </nav>
 
-    <main style="background: url('assets/images/bg.jpeg') center/cover no-repeat; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px;">
+    <main  id="dynamic-content"  style="background: url('assets/images/bg.jpeg') center/cover no-repeat; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px;">
 
         <h2>Welcome to Our Consultation Services</h2>
         <p>Empowering your business with expert advice and solutions.</p>
         <p>Explore our services and take your business to new heights.</p>
+
+       
 
         <div style="margin-top: 20px;">
             <h3>Content 1</h3>
@@ -95,6 +97,16 @@
             <p>Additional information or services can be placed here.</p>
             <p>Ensure the content is relevant and engages your audience.</p>
         </div>
+
+        <div class= "container" style="margin-top: 50px;" id="about-content">
+             <?php include("public/about_content.php"); ?>
+         </div>
+
+        <div class= "container" style="margin-top: 50px;" id="services-content">
+             <?php include("public/services_content.php"); ?>
+         </div>
+
+    
 
 
     </main>
